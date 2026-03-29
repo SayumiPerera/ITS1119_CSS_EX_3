@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <<meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="IJSE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 04</title>
+
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 220vh;                /* enough height to scroll */
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            border: 5px solid #000;
+            background: white;
+            min-height: 100vh;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background: #d32f2f;              /* red header */
+            color: white;
+            padding: 18px 30px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            z-index: 10;
+            border-bottom: 4px solid #b71c1c;
+        }
+
+        .content {
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 8rem;
+            margin: 60px 0;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="card">
+    <div class="header">Card 1</div>
+
+    <div class="content">
+        <h1>Hello</h1>
+
+        <div style="height: 120vh;"></div> <!-- extra space to force scrolling -->
+        <p>End of content area.</p>
+    </div>
+</div>
 
 </body>
 </html>

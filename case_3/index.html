@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <<meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="IJSE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case 03</title>
+
+    <link rel="stylesheet" href="../assets/normalize.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .frame {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 720px;
+            height: 520px;
+            border: 24px solid #888;          /* gray outer border */
+            background: white;
+            z-index: 10;
+            pointer-events: none;             /* allows clicks to go through to scrolling content */
+        }
+
+        .inner-border {
+            position: absolute;
+            inset: 36px;                      /* space for gray border thickness */
+            border: 14px solid #e53935;       /* red inner border */
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hello-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 240px;
+            height: 240px;
+            background: #7e57c2;              /* purple */
+            color: white;
+            font-size: 3.8rem;
+            font-weight: bold;
+            line-height: 240px;
+            text-align: center;
+            border: 18px solid #e53935;
+            border-radius: 50%;
+            z-index: 20;
+            pointer-events: none;
+        }
+
+        .scroll-content {
+            position: absolute;
+            inset: 48px;                      /* inside red border */
+            overflow-y: auto;
+            padding: 140px 60px 60px;         /* extra top padding for Hello circle */
+            font-size: 1.2rem;
+            line-height: 1.7;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .scroll-content p {
+            margin-bottom: 1.4em;
+        }
+    </style>
 </head>
 <body>
+
+<!-- Fixed frame & borders (stay in center) -->
+<div class="frame">
+    <div class="inner-border"></div>
+    <div class="hello-circle">Hello</div>
+</div>
+
+<!-- Scrolling content flows inside the frame -->
+<div class="scroll-content">
+
+</div>
 
 </body>
 </html>
